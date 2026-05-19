@@ -1,0 +1,11 @@
+node_modules
+dist
+.vite
+.DS_Store
+*.log
+direct-booking/
+server/data/
+.playwright-mcp/
+/admin-reaudit*.png
+/home-1440.png
+/home-mobile.png
