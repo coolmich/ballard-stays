@@ -1759,8 +1759,7 @@ hr { border: none; border-top: 1px solid var(--line); margin: 20px 0; }
 /* Header */
 .mob .mob-header {
   padding: 24px 20px 14px;
-  position: sticky; top: 0; z-index: 10;
-  background: linear-gradient(180deg, var(--bg) 0%, var(--bg) 70%, transparent 100%);
+  background: var(--bg);
 }
 .mob .mob-header-eyebrow {
   font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
