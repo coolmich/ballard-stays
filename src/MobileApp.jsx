@@ -54,7 +54,7 @@ function makeConf() {
 }
 
 export default function MobileApp() {
-  const [tab, setTab] = useState("how");
+  const [tab, setTab] = useState("stays");
   const [selectedStayId, setSelectedStayId] = useState(PROPERTIES[0].id);
   const [confirmation, setConfirmation] = useState(null);
 
@@ -84,13 +84,13 @@ export default function MobileApp() {
 function TabBar({ current, onChange }) {
   return (
     <nav className="tabbar">
-      <button className={"tab" + (current === "how" ? " tab-active" : "")} onClick={() => onChange("how")}>
-        <IconInfo active={current === "how"} />
-        <span>How it works</span>
-      </button>
       <button className={"tab" + (current === "stays" ? " tab-active" : "")} onClick={() => onChange("stays")}>
         <IconHouse active={current === "stays"} />
         <span>Stays</span>
+      </button>
+      <button className={"tab" + (current === "how" ? " tab-active" : "")} onClick={() => onChange("how")}>
+        <IconInfo active={current === "how"} />
+        <span>How it works</span>
       </button>
       <button className={"tab" + (current === "book" ? " tab-active" : "")} onClick={() => onChange("book")}>
         <IconCalendar active={current === "book"} />
