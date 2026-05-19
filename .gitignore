@@ -9,3 +9,10 @@ server/data/
 /admin-reaudit*.png
 /home-1440.png
 /home-mobile.png
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
