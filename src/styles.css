@@ -2062,7 +2062,7 @@ hr { border: none; border-top: 1px solid var(--line); margin: 20px 0; }
 }
 
 /* Book screen */
-.mob .bookmob-main-padded { padding-bottom: 130px; }
+.mob .bookmob-main-padded { padding-bottom: 16px; }
 .mob .bookmob-stayselect { padding: 0 16px; margin-bottom: 16px; }
 .mob .bookmob-staypicker-label {
   font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
@@ -2230,17 +2230,13 @@ hr { border: none; border-top: 1px solid var(--line); margin: 20px 0; }
   background: var(--accent); border-color: var(--accent); color: #fff;
 }
 
-/* Sticky CTA bar */
+/* Inline CTA bar (scrolls with content) */
 .mob .bookmob-cta-bar {
-  position: fixed;
-  bottom: calc(var(--tab-h) + env(safe-area-inset-bottom, 0px));
-  left: 0; right: 0;
-  padding: 12px 16px 14px;
-  background: rgba(250,248,244,0.96);
-  backdrop-filter: blur(20px) saturate(1.6);
-  -webkit-backdrop-filter: blur(20px) saturate(1.6);
-  border-top: 1px solid var(--line);
-  z-index: 50;
+  margin: 18px 16px 12px;
+  padding: 14px 16px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
 }
 .mob .bookmob-cta-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
 .mob .bookmob-cta-price { display: flex; flex-direction: column; }
